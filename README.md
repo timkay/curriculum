@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b64b1cdd-7a78-45da-a9ed-401b8298b1f0)
+![image](https://github.com/user-attachments/assets/d82f50a3-e846-4f8d-88ee-b3ee411397c8)
 
 # curriculum
 This is my curriculum for teaching coding to high school students at the AP CS level.
