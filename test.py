@@ -3,18 +3,16 @@ import FreeSimpleGUI as sg
 def rgb(r, g, b):
     return f'#{r:02x}{g:02x}{b:02x}'
 
-layout = [
-    [sg.Canvas(size=(100, 100), background_color='white', key='canvas')],
-    [sg.Exit()],
-]
-
 w, h = 40, 30
 k = 10
 
-window = sg.Window('Dynamic Table', layout, finalize=True)
+layout = [
+    [sg.Canvas(size=(k * w, k * h), background_color='white', key='canvas')],
+    [sg.Exit()],
+]
 
+window = sg.Window('Dynamic Table', layout, finalize=True)
 canvas = window['canvas'].TKCanvas
-canvas.configure(width=k * w, height=k * h, bg="white")
 
 for j in range(0, h):
     for i in range(0, w):
