@@ -17,7 +17,7 @@ canvas = window['canvas'].TKCanvas
 for j in range(0, h):
     for i in range(0, w):
         x, y = k * i, k * j
-        pixel = canvas.create_oval(x + 1, y + 1, x + k - 2, y + k - 2, fill=rgb(255, 128, 0))
+        pixel = canvas.create_rectangle(x + 1, y + 1, x + k - 2, y + k - 2, fill=rgb(255, 128, 0))
 
 while True:
     event, values = window.read()
