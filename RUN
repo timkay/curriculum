@@ -10,7 +10,9 @@ fi
 
 #set -x
 
-cmd=$1; shift
+if (( $# > 0 )); then
+    cmd=$1; shift
+fi
 
 if [[ $cmd = install ]]; then
     python3 -m pip install --upgrade pip
@@ -18,8 +20,9 @@ if [[ $cmd = install ]]; then
     exit
 fi
 
-
 if [[ $cmd == run ]]; then
-    python3 test.py
+    python3 $1
     exit
 fi
+
+python3 test.py
